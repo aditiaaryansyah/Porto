@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_sidebar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link  rel="stylesheet" href="css/style_portfolio.css">
+ 
+    <title>UI & uX Design</title>
+</head>
+<body>
+   
+    <div id="sidebar" class="sideNavbar">
+      
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a class="Nav-item" href="index.html">
+            <i class="fas fa-home"></i> 
+            <br>
+            <span class="Nav-name">Home</span></a>
+            
+        <a class="Nav-item" href="aboutus.html">
+            <i class="fas fa-user"></i> 
+            <br>
+            <span class="Nav-name">About Me</span></a>
+
+        <div class="Nav-item" id="headerport">
+            <a href="Portfolio.html">
+            <i class="fas fa-briefcase"></i> <br>
+            <span class="Nav-name">Portfolio</span></a>
+            <ul id="hideport">
+                <li><a href="frontend.html">FrontEnd</a></li>
+                <li><a  href="uiux.html">UI & UX</a></li>
+                <li><a href="illustrator.html">illustrator</a></li>
+            </ul></div>
+
+        <a class="Nav-item" href="aboutus.html">
+            <i class="fas fa-envelope"></i>
+            <br>
+            <span class="Nav-name">Contact Us</span></a>
+
+            <div class="Nav-item" id="headerport">
+                <a  href="#">
+                <i class="material-icons">language</i><br>
+            <span class="Nav-name">Sosial Media</span></a>
+            <ul id="hideport">
+                <li><a href="frontend.html">facebook</a></li>
+                <li><a  href="uiux.html">instagram</a></li>
+                <li><a href="https://twitter.com/?lang=id">xtweet</a></li>
+            </ul>
+        </div>
+
+ 
+    </div>
+    
+             
+  
+    
+      <button class="openbtn" onclick="openNav()">☰ </button>  
+
+        <div class="header">
+            <h3>Portfolio</h3>
+           <div class="txt"> 
+            <span id="txt1">UI & UX</span> <span id="txt2">Design</span>
+            <hr>
+            <p id="desc-txt">Here, you will find my works as well as a little information about who I am and what I do </p>
+        </div> 
+        </div>
+
+        <div class="foto">
+            <div class="responsive">
+                <div class="gallery">
+                        <img src="gambar/uiux/Interior/Master.png" alt="Yummy food" width="400" height="100" onclick="openModal(1)">
+                    <div class="desc">
+                        <span id="desc-1">Apps Interior</span>
+                        <hr>
+                        <span id="desc-md2">Mobile App Design</span>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="responsive">
+                <div class="gallery">
+                        <img src="gambar/uiux/Ymfd/Tm.png" alt="Yummy food" width="400" height="100" onclick="openModal(0)">
+                    <div class="desc">
+                        <span id="desc-1">Apps Yummy Food </span>
+                        <hr>
+                        <span id="desc-md2">Mobile App Design</span>
+                    </div>
+                </div>
+            </div>   
+        </div>
+      
+        <div id="uiux0" class="modal">
+            <span class="close" onclick="closeModal(0)">&times;</span>
+            <div class="modal-content">
+                <div class="mySlides">
+                    <img src="gambar/uiux/Ymfd/Tm.png" style="width:100%">
+                   
+                </div>
+                <div class="mySlides">
+                    <img src="gambar/uiux/Ymfd/frmlgn.png" style="width:100%">
+                    <p>Form Login</p>
+                </div>
+                <div class="mySlides">
+                    <img src="gambar/uiux/Ymfd/frmrgst.png" style="width:100%">
+                    <p>Form Registrasi</p>
+                </div>
+                <div class="mySlides">
+                    <img src="gambar/uiux/Ymfd/mnu.png" style="width: 100%">
+                    <p>Page Menu</p>
+                </div>
+                <div class="mySlides">
+                    <img src="gambar/uiux/Ymfd/pgcrt.png" style="width: 100%">
+                    <p>Page Cart</p>
+                </div>
+                <div class="mySlides">
+                    <img src="gambar/uiux/Ymfd/mtdpymnt.png" style="width: 100%">
+                    <p>Method Payment</p>
+                </div>
+                <div class="mySlides">
+                    <img src="gambar/uiux/Ymfd/infscs.png" style="width: 100%">
+                    <p>information Success</p>
+                </div>
+                <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+            </div>
+        </div>  
+        </div>
+
+        <div id="uiux1" class="modal">
+            <span class="close" onclick="closeModal(1)">&times;</span>
+            <div class="modal-content">
+                <div class="mySlides">
+                    <img src="gambar/uiux/Interior/Master.png" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="gambar/uiux/Interior/hnoge.png" style="width:100%">
+                    <p>Home Page</p>
+                </div>
+                <div class="mySlides">
+                    <img src="gambar/uiux/Interior/frmlgn.png" style="width:100%">
+                    <p>Form Login</p>
+                </div>
+                <div class="mySlides">
+                    <img src="gambar/uiux/Interior/frmvrfks.png" style="width: 100%">
+                    <p>Form Verifikasi</p>
+                </div>
+                <div class="mySlides">
+                    <img src="gambar/uiux/Interior/mainmenu.png" style="width:100%">
+                    <p>Main Menu</p>
+                </div>
+                <div class="mySlides">
+                    <img src="gambar/uiux/Interior/ctlg.png" style="width:100%">
+                    <p>View Catalog</p>
+                </div>
+                <div class="mySlides">
+                    <img src="gambar/uiux/Interior/prdct.png" style="width: 100%">
+                    <p>View Product</p>
+                </div>
+                <div class="mySlides">
+                    <img src="gambar/uiux/Interior/vwcrt.png" style="width:100%">
+                    <p>View Cart</p>
+                </div>
+                <div class="mySlides">
+                    <img src="gambar/uiux/Interior/pytmthd.png" style="width: 100%">
+                    <p>Payment Method</p>
+                </div>
+             
+                <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+            </div>
+   </div>
+        </div>
+
+            <script src="script/navside.js"></script>
+            <script src="script/uiux.js"></script>
+</body>
+</html>

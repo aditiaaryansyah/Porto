@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_index.css">
+    
+    <title>Portofolio</title>
+</head>
+<body>
+    
+    <div class="container">   
+        <div class="headd">
+            <h6 id="porto">Portofolio</h6>
+         <div class="text"><h2  class="txt1"> Hallo, </h2>
+
+                 <div><span class="txt2">I'M A</span>
+                 <span class="txt2" id="txtorg">CREATIVE </span></div> 
+                     <h2 class="txt2" id="txt3">DESIGNER GRAPHIC </h2>
+              <hr>
+            </div>
+            <p>Here, you will find my works as well as a little information about who I am and what I do</p>
+           <button type="button"  class="btn" id="Learn Me">Learn Me</button>
+       </div>
+
+    </div>
+    <script>
+        var textElement = document.getElementById("txt3");
+        var texts = ["DESIGNER GRAPHIC", "UI/UX DESIGN", "FRONTEND ENGINER"];
+        var index = 0;
+        var intervalTime = 1300; // Waktu perubahan dalam ms
+
+        function changeText() {
+            textElement.classList.remove("animate-text"); // Hapus kelas animasi jika ada
+            void textElement.offsetWidth; // Trigger reflow untuk memulai ulang animasi
+            textElement.innerHTML = texts[index];
+            textElement.classList.add("animate-text"); // Tambahkan kelas animasi
+            index = (index + 1) % texts.length; // Update index untuk teks berikutnya
+        }
+
+        // Ganti teks setiap interval waktu
+        setInterval(changeText, intervalTime);
+        //script mnemuat teks berganti
+
+            document.getElementById("Learn Me").addEventListener("click",function () {
+                window.location.href="aboutus.html";
+            });;
+            function setVH() {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+
+window.addEventListener('resize', setVH);  // Atur kembali saat layar diresize
+setVH();  // Panggil saat halaman pertama kali dimuats
+            //membuat button diklik akan menuju halaman yang di tentukan
+    </script>
+  
+</body>
+</html>

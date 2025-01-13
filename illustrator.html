@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_sidebar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link  rel="stylesheet" href="css/style_portfolio.css">
+
+    
+
+    <title>illustrator</title>
+</head>
+<body>
+   
+    <div id="sidebar" class="sideNavbar">
+      
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a class="Nav-item" href="index.html">
+            <i class="fas fa-home"></i> 
+            <br>
+            <span class="Nav-name">Home</span></a>
+            
+        <a class="Nav-item" href="aboutus.html">
+            <i class="fas fa-user"></i> 
+            <br>
+            <span class="Nav-name">About Me</span></a>
+
+        <div class="Nav-item" id="headerport">
+            <a href="Portfolio.html">
+            <i class="fas fa-briefcase"></i> <br>
+            <span class="Nav-name">Portfolio</span></a>
+            <ul id="hideport">
+                <li><a href="frontend.html">FrontEnd</a></li>
+                <li><a  href="uiux.html">UI & UX</a></li>
+                <li><a href="illustrator.html">illustrator</a></li>
+            </ul></div>
+
+        <a class="Nav-item" href="aboutus.html#Target-Contact">
+            <i class="fas fa-envelope"></i>
+            <br>
+            <span class="Nav-name">Contact Us</span></a>
+
+            <div class="Nav-item" id="headerport">
+                <a  href="#">
+                <i class="material-icons">language</i><br>
+            <span class="Nav-name">Sosial Media</span></a>
+            <ul id="hideport">
+                <li><a href="frontend.html">facebook</a></li>
+                <li><a  href="uiux.html">instagram</a></li>
+                <li><a href="https://twitter.com/?lang=id">xtweet</a></li>
+            </ul>
+        </div>
+
+ 
+    </div>
+    
+             
+  
+    
+      <button class="openbtn" onclick="openNav()">☰ </button>  
+        <div class="content">
+        <div class="header">
+            <h3>Portfolio</h3>
+           <div class="txt"> 
+            <span id="txt1">illustrator</span> <span id="txt2">Design</span>
+            <hr>
+            <p id="desc-txt">Here, you will find my works as well as a little information about who I am and what I do </p>
+        </div> 
+        </div>
+
+        <div class="foto" >
+                <div class="responsive">
+                    <div class="gallery">
+                            <img src="gambar/Ilutrator/sepatu/tmshs.png" alt="Shoes" width="400" height="auto" onclick="openModal(0)">
+                 
+                        <div class="desc">
+                            <span id="desc-1">Branding Design</span>
+                            <hr>
+                            <span id="desc-md2">Visual Promotion Design</span>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="responsive">
+                        <div class="gallery">
+                                <img src="gambar/hdset/tmhdset.png" alt="HeadPhone" width="400" height="auto" onclick="openModal(1)">
+                     
+                            <div class="desc">
+                                <span id="desc-1">Branding & Marketing  Design</span>
+                                <hr>
+                                <span id="desc-md2">Visual Promotion Design</span>
+                            </div>
+                        </div>
+                        </div>
+                     
+                        <div class="responsive">
+                            <div class="gallery">
+                                    <img src="gambar/Ilutrator/stojra/tmstojr.png" alt="HeadPhone" width="400" height="auto" onclick="openModal(2)">
+                         
+                                <div class="desc">
+                                    <span id="desc-1">Marketing Design</span>
+                                    <hr>
+                                    <span id="desc-md2">Menu Promotion Design</span>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="responsive">
+                                <div class="gallery">
+                                    <img src="gambar/Ilutrator/jersey/tmsjrsy.png" alt="Jersey" width="400" height="auto" onclick="openModal(3)">
+                                    <div class="desc">
+                                        <span id="desc-1">Jersey Design</span>
+                                        <hr>
+                                        <span id="desc-md2">Menu Promotion Design</span>
+                                    </div>
+                                </div>
+                            </div>
+        </div>
+
+                <div id="ilutmdl0" class="modal">
+                <span class="close" onclick="closeModal(0)">&times;</span>
+                <div class="modal-content">
+                    <div class="mySlides">
+                  
+                        <img src="gambar/Ilutrator/sepatu/tmshs.png" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                
+                        <img src="gambar/Ilutrator/sepatu/mdlone.png" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                   
+                        <img src="gambar/Ilutrator/sepatu/mdltw.png" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                  
+                        <img src="gambar/Ilutrator/sepatu/mdlylw.png" style="width:100%">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                </div>
+            </div>  
+
+            <div id="ilutmdl1" class="modal">
+                <span class="close" onclick="closeModal(1)">&times;</span>
+                <div class="modal-content">
+                    <div class="mySlides">
+                  
+                        <img src="gambar/hdset/tmhdset.png" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                     
+                        <img src="gambar/hdset/vctrhdset.png" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                
+                        <img src="gambar/hdset/advthdset.png" style="width:100%">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                </div>
+            </div> 
+
+            <div id="ilutmdl2" class="modal">
+                <span class="close" onclick="closeModal(2)">&times;</span>
+                <div class="modal-content">
+                    <div class="mySlides">
+                        <div class="txtnumb">1/4</div>
+                        <img src="gambar/Ilutrator/stojra/tmstojr.png" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="txtnumb">2/4</div>
+                        <img src="gambar/Ilutrator/stojra/mnrmdhn.png" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="txtnumb">3/4</div>
+                        <img src="gambar/Ilutrator/stojra/mnutm.png" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="txtnumb">3/4</div>
+                        <img src="gambar/Ilutrator/stojra/mnscnd.png" style="width:100%">
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+                </div>
+            </div> 
+            <div id="ilutmdl3" class="modal">
+                <span class="close" onclick="closeModal(3)">&times;</span>
+                <div class="modal-content">
+                    <div class="mySlides">
+                        <img src="gambar/Ilutrator/jersey/tmsjrsy.png" style="width:100%">
+                    </div>
+                        <div class="mySlides">
+                        <img src="gambar/Ilutrator/jersey/lgjrsy.png" style="width: 100%">
+                </div>
+
+                <div class="mySlides">
+                    <img src="gambar/Ilutrator/jersey/jrsdpn.png" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="gambar/Ilutrator/jersey/jrsyblkng.png" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="gambar/Ilutrator/jersey/spnr.png" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="gambar/Ilutrator/jersey/mrkupjrsy.png" style="width:100%">
+                </div>
+
+                    <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+                </div>
+            </div> 
+            
+    
+
+            <script src="script/navside.js"></script>
+            <script src="script/illustrator.js"></script>
+           
+</body>
+</html>

@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+  font-family: "Montserrat";
+  max-width: 100%;
+  background-color: rgba(1, 1, 1, 0.915);
+}
+
+.sideNavbar  {
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+
+}
+
+
+
+
+
+.sideNavbar a:not(.closebtn) {
+  position: relative; /* untuk positioning pseudo-element */
+  padding:20px 0px;
+width:80%;
+  transform: translate(15%  , 50%);
+
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: color 0.3s;
+  white-space: nowrap;
+  overflow: hidden;
+
+
+}
+.Nav-item{
+  text-align: center;
+}
+.Nav-name{
+
+  font-size: 10px;
+
+}
+#hideport  {
+  margin: 0px;
+  padding: 0px;
+  display: none; /* Disembunyikan secara default */
+  text-align: center;
+
+}
+#hideport  li {
+    margin: 5px 0; /* Mengatur jarak antar item */
+    padding: 0;
+    list-style-type: none;
+    width: 100%; /* Pastikan elemen li mengambil lebar penuh */
+}
+#hideport  a {
+  font-size: 12px;
+  color: aliceblue;
+  display: block; /* Pastikan ini ditampilkan sebagai blok */
+  height: 5px;
+  margin-top: 5px;
+
+  text-align: center;
+}
+ 
+
+.Nav-item:hover #hideport {
+  display: block; /* Muncul saat hover */
+  height: 120px;
+  margin: 0px;
+  padding: 0px;
+}
+#hideport li a:hover {
+  color: orange;
+  transition: color .5s;
+  display: block;
+  text-align: center;
+  position: relative;
+right: 0px;
+}
+
+.sideNavbar a:hover {
+ color: white;
+ font-weight: bold;
+}
+
+.sideNavbar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 26px;
+
+}
+.closebtn {
+  color:orange;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #302f2f;
+
+  border-radius: 10px;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+
+  background-color:#444;
+}
+
+@media (min-width:320px) and (max-width:480){
+  #hideport li a{
+    pointer-events: none;
+  }
+}
+@media (hover: none) and (min-width:320px) and (max-width:1024){
+  #hideport li a{
+    pointer-events: none;
+  }
+}

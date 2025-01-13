@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+   @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+   body , html{
+      background-color: rgb(0, 0, 0);
+      color: white;
+   font-family:"Montserrat", sans-serif;
+      padding:0px;
+      margin: 0px;
+      overflow: hidden;
+   }
+
+   .container {
+      width: 100%; /* Atur lebar yang diinginkan */
+      margin: 0 auto; /* Untuk posisi horizontal */
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin:  0px;
+   text-align: center;
+   font-family: "Michroma", sans-serif;   
+   animation: textMove 1s ease-in-out;
+ 
+
+  
+
+   }
+   #porto{
+      position: absolute;
+      font-size: 20px;
+      color:orange;
+      top: 10px;
+      left: 50px;
+   }
+   .text{
+      line-height: 1; 
+   
+   }
+
+   h2{
+      margin:0px;
+      font-weight: 100;
+      max-width: 550%;
+      font-size: 45px;
+    
+   }
+   .txt1 , .txt2{
+      font-size: 45px;
+   }
+   #txtorg{
+      color:rgb(255, 157, 0);
+   }
+   hr{
+      
+      border-width: 4px ;
+      border-color:orange;
+      border-style: solid;
+      position: relative;
+      top:1px;
+      width: 350px; 
+      border-radius: 1px;  
+      margin:5px 250px;   
+      
+
+   }
+
+ 
+   p{
+      font-size: 18px;
+      font-family: "Caveat", cursive;
+      width: 310px;
+      margin:3px auto 0;
+   }
+  
+  
+
+ 
+@keyframes textMove {
+   0% {
+     transform: translateY(100px); /* Start from below the viewport */
+     opacity: 0;
+   }
+   100% {
+     transform: translateY(0); /* Move to initial position */
+     opacity: 1;
+   
+   }
+}
+ 
+  
+
+  
+   
+  .btn{
+   font-size: 17px;
+   width: 150px;
+   padding: 5px;
+  background-color: white;
+   color: black;
+   border-radius: 25px; 
+   letter-spacing: 2px;
+   transition: width 0.5s;
+   margin:5px 0px;
+   
+  }
+  .btn:hover{
+   background-color: orange;
+   width:180px;
+
+ 
+  }
+  @media (min-width:320px) and (max-width:480px){
+  
+   .container{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    
+   }
+    h6 {
+      display: none;
+   }
+   
+   .txt1 , .txt2{
+      font-size: 16px;
+      width: 100%;
+   }
+  
+hr{
+   width: 100px;
+   margin:0 auto;
+}
+p{
+   font-size: 12px;
+   width: 250px;
+ 
+}
+.btn{
+   width: 150px;
+   padding:1px;
+   font-size: 10px;
+  
+  
+}
+.btn:hover{
+  
+   font-weight: normal; /* Kembalikan ke berat font default */
+   border-bottom: none;
+}
+hr{
+   border-width: 2px;
+   margin:5px auto 0;
+}
+#porto{
+   font-size: 12px;
+   position: absolute;
+   left: -50px;
+   top: 20px;
+}
+  }
+  @media (min-width:481px) and (max-width:760px){
+   .txt1  , .txt2 {
+      font-size: 24px;
+   }
+   #porto{
+      font-size: 16px;
+      position: absolute;
+      left: 50px;
+      top: 20px;
+      
+   }
+   .btn{
+      padding:1px;
+      width: 200px;
+      margin: 5px auto;
+      position: inherit;
+   }
+     .btn:hover{
+  
+   font-weight: normal; /* Kembalikan ke berat font default */
+   border-bottom: none;
+}
+   
+  }
