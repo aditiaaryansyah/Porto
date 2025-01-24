@@ -1,8 +1,9 @@
-let slideIndex = [1,1];
-let modalId = ["uiux0" , "uiux1"];
+let slideIndex = [1,1,1];
+let modalId = ["uiux0" , "uiux1","uiux2"];
 let modalSlides = [
     document.querySelectorAll("#uiux0 .mySlides"),
     document.querySelectorAll("#uiux1 .mySlides"),
+    document.querySelectorAll("#uiux2 .mySlides"),
 ];
 
 function openModal(index){
